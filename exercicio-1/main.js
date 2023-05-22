@@ -30,3 +30,11 @@ function calcularIMC(peso, altura) {
 
   return `IMC: ${calculoImc.toFixed(2)} | Situação: ${situacao}`;
 }
+
+const imc = IMC('80', 1.75)
+  .then((r) => console.log(r))
+  .catch((err) => console.log(err));
+
+const imc2 = IMC(80, 1.75)
+  .then((r) => console.log(r))
+  .catch((err) => console.log(err));
