@@ -1,6 +1,7 @@
 function IMC(peso, altura) {
   return new Promise((resolve, reject) => {
     if (typeof peso === 'number' && typeof altura === 'number') {
+      console.log('calculando...');
       const resultado = calcularIMC(peso, altura);
       return resolve(resultado);
     } else reject('Valor informado precisa ser um numero.');
@@ -36,5 +37,13 @@ const imc = IMC('80', 1.75)
   .catch((err) => console.log(err));
 
 const imc2 = IMC(80, 1.75)
+  .then((r) => console.log(r))
+  .catch((err) => console.log(err));
+
+const imc3 = IMC(55.1, 1.61)
+  .then((r) => console.log(r))
+  .catch((err) => console.log(err));
+
+const imc4 = IMC(65, 1.58)
   .then((r) => console.log(r))
   .catch((err) => console.log(err));
