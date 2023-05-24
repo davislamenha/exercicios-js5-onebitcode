@@ -1,0 +1,16 @@
+{
+  "transacoes": [
+    {
+      "id": 1,
+      "nome": "Salário",
+      "tipo": "C",
+      "valor": 5000
+    },
+    {
+      "id": 2,
+      "nome": "Farmacia",
+      "tipo": "D",
+      "valor": 500
+    }
+  ]
+}
