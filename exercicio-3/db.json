@@ -1,0 +1,22 @@
+{
+  "transacoes": [
+    {
+      "tipo": "C",
+      "valor": 5500,
+      "nome": "Salário",
+      "id": 1
+    },
+    {
+      "tipo": "D",
+      "valor": 1200,
+      "nome": "Feira",
+      "id": 2
+    },
+    {
+      "tipo": "D",
+      "valor": 50,
+      "nome": "Pix",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Bank Code</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <h1>One Bank Code</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="saldo-bg">
+        <span class="moeda">R$ <span id="saldo-valor">0</span></span>
+      </div>
+
+
+
+      <form>
+        <h3>Adicionar Nova Transação</h3>
+        <input type="hidden" id="id">
+        <div class="form-control">
+          <label for="nome">Nome da Transação</label>
+          <input type="text" id="nome" required>
+        </div>
+
+        <div class="form-control">
+          <label for="tipo">Tipo</label>
+          <select id="tipo" required>
+            <option value="">Selecione uma opção</option>
+            <option value="C">Crédito</option>
+            <option value="D">Débito</option>
+          </select>
+        </div>
+
+        <div class="form-control">
+          <label for="valor">Valor da Transação</label>
+          <input type="number" id="valor" step="0.01" required>
+        </div>
+
+        <button type="submit">Salvar</button>
+      </form>
+
+      <div class="transacoes">
+        <h3>Histórico de Transações</h3>
+        <table id="transacoes-tabela">
+
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+
+
+
+
+    </div>
+  </main>
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
