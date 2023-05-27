@@ -11,6 +11,12 @@
       "valor": 1200,
       "nome": "Feira",
       "id": 2
+    },
+    {
+      "tipo": "D",
+      "valor": 50,
+      "nome": "Pix",
+      "id": 3
     }
   ]
 }
